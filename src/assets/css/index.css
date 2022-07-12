@@ -46,6 +46,8 @@ h3 {
 /* Container */
 
 .container {
+  margin: 0 auto;
+  max-width: 1140px;
   padding: 0 1rem;
 }
 
@@ -53,4 +55,91 @@ h3 {
   .container {
     padding-left: 7rem;
   }
+}
+
+/* NavBar */
+
+.nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.nav__list {
+  margin: 0;
+  width: 100%;
+}
+
+.nav__item {
+  border-bottom: 1px solid #222;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.nav__item:hover {
+  background: #e7e2e2;
+  cursor: pointer;
+  font-size: 1.55rem;
+}
+
+.nav__menu-icon {
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .nav__menu-icon {
+  border: 3px solid #222;
+  border-radius: 5px;
+  padding: 0.15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+
+  .nav__list {
+    display: flex;
+    width: auto;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+
+  .nav__item:hover {
+    background: none;
+  }
+
+  .nav__menu-icon {
+    display: none;
+  }
+}
+
+/* List */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Collapsibles */
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Icons */
+.icon {
+  cursor: pointer;
 }

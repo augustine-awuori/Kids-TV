@@ -1,9 +1,11 @@
+import NavBar from "./components/NavBar";
+
 export default function App() {
   return (
-    <section className="App">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
+    <section>
+      <main className="container">
+        <NavBar />
+      </main>
     </section>
   );
 }
