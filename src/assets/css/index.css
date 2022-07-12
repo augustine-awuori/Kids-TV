@@ -15,7 +15,7 @@ h1,
 h2,
 h3 {
   margin-bottom: 1rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 h1 {
@@ -28,4 +28,16 @@ h2 {
 
 h3 {
   font-size: 1.953rem;
+}
+
+/* Container */
+
+.container {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 7rem;
+  }
 }
