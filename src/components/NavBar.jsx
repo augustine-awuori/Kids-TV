@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <nav className={`nav collapsible ${getClassName()}`}>
-      <h1>Syaana TV | Kids</h1>
+      <h1 className="nav__heading">Syaana TV | Kids</h1>
       <img
         alt=""
         className="icon nav__menu-icon"

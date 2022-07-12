@@ -2,8 +2,13 @@
 
 /* Typography */
 
+:root {
+  --color-border: #222;
+}
+
 body {
   font-family: "Poppins", Geneva, Tahoma, sans-serif;
+  margin-top: 7rem;
 }
 
 html {
@@ -51,20 +56,23 @@ h3 {
   padding: 0 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    padding-left: 7rem;
-  }
-}
-
 /* NavBar */
 
 .nav {
   align-items: center;
+  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 0.5rem;
+  left: 0;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.nav__heading {
+  margin: 0;
 }
 
 .nav__list {
@@ -73,7 +81,7 @@ h3 {
 }
 
 .nav__item {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid var(--color-border);
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
@@ -90,7 +98,7 @@ h3 {
 }
 
 .collapsible--expanded .nav__menu-icon {
-  border: 3px solid #222;
+  border: 3px solid var(--color-border);
   border-radius: 5px;
   padding: 0.15rem;
 }
@@ -112,6 +120,7 @@ h3 {
 
   .nav__item:hover {
     background: none;
+    border-bottom: 3px solid var(--color-border);
   }
 
   .nav__menu-icon {
