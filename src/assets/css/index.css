@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #ede1e1;
+  background: #f4f0f0;
   font-family: "Poppins", Geneva, Tahoma, sans-serif;
   margin-top: 7rem;
 }
@@ -70,6 +70,7 @@ h3 {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 1;
 }
 
 .nav__heading {
