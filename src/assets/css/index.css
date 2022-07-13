@@ -7,6 +7,7 @@
 }
 
 body {
+  background: #ede1e1;
   font-family: "Poppins", Geneva, Tahoma, sans-serif;
   margin-top: 7rem;
 }
@@ -189,4 +190,59 @@ h3 {
   .tv-show__video__title {
     font-size: 1.5rem;
   }
+}
+
+/* Home */
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__footer {
+  padding: 1.5rem;
+}
+
+.card__title {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0;
+  text-shadow: 0 1px 1px var(--color-border);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin: 1rem;
+    max-width: 30rem;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Anchors */
+
+a {
+  text-decoration: none;
 }
