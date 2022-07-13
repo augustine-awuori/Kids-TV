@@ -1,5 +1,6 @@
-import React from "react";
+import { getKikiAndElla } from "../services/fakeVideosService";
+import useSection from "../hooks/useSection";
 
 export default function KikiAndElla() {
-  return <div>KikiAndElla</div>;
+  return useSection(getKikiAndElla);
 }

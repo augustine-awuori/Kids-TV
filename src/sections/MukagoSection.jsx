@@ -1,5 +1,6 @@
-import React from "react";
+import { getMukagoVideos } from "../services/fakeVideosService";
+import useSection from "../hooks/useSection";
 
 export default function MukagoSection() {
-  return <div>MukagoSection</div>;
+  return useSection(getMukagoVideos);
 }

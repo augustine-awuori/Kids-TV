@@ -1,5 +1,6 @@
-import React from "react";
+import { getTimeTechVideos } from "../services/fakeVideosService";
+import useSection from "../hooks/useSection";
 
 export default function TimeTechKidsSection() {
-  return <div>TimeTechKidsSection</div>;
+  return useSection(getTimeTechVideos);
 }

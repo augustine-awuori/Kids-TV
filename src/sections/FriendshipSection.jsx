@@ -1,5 +1,6 @@
-import React from "react";
+import { getFriendshipVideos } from "../services/fakeVideosService";
+import useSection from "../hooks/useSection";
 
-export default function friendshipSection() {
-  return <div>friendshipSection</div>;
+export default function FriendshipSection() {
+  return useSection(getFriendshipVideos);
 }
