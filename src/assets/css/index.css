@@ -152,3 +152,41 @@ h3 {
 .icon {
   cursor: pointer;
 }
+
+/* Tv Show */
+.tv-show {
+  margin-bottom: 4rem;
+}
+
+.tv-show__heading {
+  letter-spacing: -1px;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 1px var(--color-border);
+}
+
+.tv-show__video__title {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* Videos */
+.video {
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 0 3px 1.5px #837f7f;
+}
+
+@media screen and (min-width: 768px) {
+  .tv-show__videos {
+    display: flex;
+  }
+
+  .video {
+    margin-right: 3rem;
+    width: 50rem;
+  }
+
+  .tv-show__video__title {
+    font-size: 1.5rem;
+  }
+}
