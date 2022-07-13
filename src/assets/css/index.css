@@ -161,6 +161,7 @@ h3 {
 }
 
 .tv-show__heading {
+  text-align: center;
   letter-spacing: -1px;
   margin-bottom: 2rem;
   text-shadow: 0 1px 1px var(--color-border);
@@ -181,15 +182,18 @@ h3 {
 @media screen and (min-width: 768px) {
   .tv-show__videos {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .video {
     margin-right: 3rem;
-    width: 50rem;
+    max-width: 70rem;
   }
 
   .tv-show__video__title {
     font-size: 1.5rem;
+    margin-bottom: 3rem;
   }
 }
 
