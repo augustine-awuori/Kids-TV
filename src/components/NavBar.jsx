@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import menu from "../assets/menu.svg";
 
@@ -20,7 +21,9 @@ export default function NavBar() {
         className="list nav__list collapsible__content"
         onClick={() => setExpanded(!expanded)}
       >
-        <li className="nav__item">Home</li>
+        <li className="nav__item">
+          <NavLink to="/">Home</NavLink>
+        </li>
         <li className="nav__item">Sign In</li>
         <li className="nav__item">Sign Up</li>
       </ul>
