@@ -180,15 +180,14 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .video {
+    width: 80rem;
+  }
+
   .tv-show__videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .video {
-    margin-right: 3rem;
-    max-width: 70rem;
   }
 
   .tv-show__video__title {

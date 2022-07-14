@@ -7,7 +7,16 @@ export default function TvShow({ heading, videos = [] }) {
       <article className="tv-show__videos">
         {videos.map((v) => (
           <article className="tv-show__video">
-            <video src={v.video} controls className="video" draggable="false" />
+            <iframe
+              className="video"
+              width="100%"
+              height="350"
+              src={v.video}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
+              allowfullscreen
+            ></iframe>
             <p className="tv-show__video__title">{v.title}</p>
           </article>
         ))}
