@@ -11,10 +11,13 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="home">
-      {sections.map(({ title, image, url }) => (
-        <Card key={title} title={title} img={image} to={url} />
-      ))}
+    <section>
+      <h2 className="tagline">Entertain & Educate Kids</h2>
+      <article className="home">
+        {sections.map(({ title, image, url }) => (
+          <Card key={title} title={title} img={image} to={url} />
+        ))}
+      </article>
     </section>
   );
 }

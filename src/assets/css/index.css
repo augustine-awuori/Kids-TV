@@ -204,6 +204,18 @@ h3 {
   justify-content: center;
 }
 
+/* Tagline */
+.tagline {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tagline {
+    font-size: 2.4rem;
+  }
+}
+
 /* Card */
 .card {
   background: #fff;
@@ -223,11 +235,11 @@ h3 {
 }
 
 .card__footer {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .card__title {
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: 500;
   letter-spacing: -1px;
   margin: 0;
