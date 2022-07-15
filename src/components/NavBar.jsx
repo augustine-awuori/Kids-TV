@@ -21,9 +21,9 @@ export default function NavBar() {
         className="list nav__list collapsible__content"
         onClick={() => setExpanded(!expanded)}
       >
-        <li className="nav__item">
-          <NavLink to="/">Home</NavLink>
-        </li>
+        <NavLink to="/">
+          <li className="nav__item">Home</li>
+        </NavLink>
         <li className="nav__item">Sign In</li>
         <li className="nav__item">Sign Up</li>
       </ul>
